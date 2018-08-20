@@ -15,7 +15,7 @@
       </label>
 
       <label>
-        Notes: <input v-model="notes" placeholder="Any thoughts?">
+        Notes: <textarea v-model="notes" placeholder="Any thoughts?"></textarea>
       </label>
       <button>Add Exercise</button>
     </form>
@@ -58,6 +58,10 @@ export default {
 </script>
 
 <style scoped>
+
+section {
+  margin: 0 25%;
+}
 
 label {
   display: block;
