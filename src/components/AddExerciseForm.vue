@@ -35,6 +35,24 @@ export default {
       crew: ''
     };
   },
+
+  methods: {
+    handleSubmit() {
+      const newExercise = {
+        name: this.name,
+        sets: this.sets,
+        reps: this.reps,
+        notes: this.notes
+      };
+      this.onAdd(newExercise);
+      
+      this.name = '';
+      this.sets = '';
+      this.reps = '';
+      this.notes = '';
+
+    }
+  }  
 };
 </script>
 
