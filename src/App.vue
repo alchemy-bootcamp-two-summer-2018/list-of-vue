@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <CuteAnimalForm v-bind:onAdd="handleAdd"/>
+    <CuteAnimalForm v-bind:onAdd="handleAdd" v-bind:cuteAnimals="cuteAnimals"/>
     <CuteAnimalList v-bind:cuteAnimals="cuteAnimals"/>
   </div>
 </template>
@@ -10,7 +10,6 @@
 import CuteAnimalForm from './components/CuteAnimalForm.vue';
 import cuteAnimals from './cute-animals.js';
 import CuteAnimalList from './components/CuteAnimalList.vue';
-
 
 export default {
   name: 'app',

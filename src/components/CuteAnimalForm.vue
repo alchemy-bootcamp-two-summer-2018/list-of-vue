@@ -1,5 +1,4 @@
 <template>
-import cuteAnimals from '../cute-animals';
   <div class="cute-animal-form">
     <h1>This is my Cute Animal Form</h1>
     <form v-on:submit.prevent="handleSubmit">
@@ -55,15 +54,6 @@ export default {
     }
   }
 };
-</script>
-
-<script>
-export default {
-  name: 'CuteAnimalForm',
-  props: {
-    msg: String
-  }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
