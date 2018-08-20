@@ -6,14 +6,18 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ExerciseList from './components/ExerciseList';
+import AddExerciseForm from './components/AddExerciseForm';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ExerciseList,
+    AddExerciseForm,
   }
-}
+
+  
+};
 </script>
 
 <style>
