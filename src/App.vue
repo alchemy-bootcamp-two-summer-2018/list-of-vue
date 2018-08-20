@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Hello World</h1>
-    <DrinkList v-bind:drinks="drinks"/>
+    <h1>Hello Boozy World</h1>
+    <DrinkList v-bind:drinks="drinks" v-bind:onRemove="handleRemove"/>
     <AddDrink v-bind:onAdd="handleAdd"/>
   </div>
 </template>
@@ -24,6 +23,14 @@ export default {
   methods: {
     handleAdd(drink) {
       this.drinks.push(drink);
+      console.log(this.drinks);
+    },
+    handleRemove(drink) {
+      const index = this.drinks.indexOf(drink);
+      if(index !== -1) {
+        this.drinks.splice(index, 1);
+      }
+
     }
   }
 };
