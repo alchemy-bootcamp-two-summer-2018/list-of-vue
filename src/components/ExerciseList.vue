@@ -6,6 +6,7 @@
         v-for="exercise in exercises"
         v-bind:key="exercise.name"
         v-bind:exercise="exercise"
+        v-bind:onRemove="onRemove"
       />
     </ul>
   </section>
@@ -18,6 +19,7 @@ export default {
   
   props: {
     exercises: Array,
+    onRemove: Function
   },
 
   components: {
