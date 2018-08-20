@@ -2,7 +2,7 @@
   <div id="app">
     <h1>Workout Tracker</h1>
     <img alt="workout logo" src="./assets/logo.png">
-    <AddExerciseForm />
+    <AddExerciseForm v-bind:onAdd="handleAdd" />
     <ExerciseList v-bind:exercises="exercises" />
   </div>
 </template>
@@ -20,6 +20,12 @@ export default {
   components: {
     AddExerciseForm,
     ExerciseList,
+  },
+  methods: {
+    handleAdd(exercise) {
+      this.exercises.push(exercise);
+    }
+
   }
 
 
