@@ -7,7 +7,7 @@
 
 <script>
 import CuteAnimalForm from './components/CuteAnimalForm.vue';
-// import cuteAnimals from '.cute-animals.js';
+// import cuteAnimals from './cute-animals.js';
 
 export default {
   name: 'app',
