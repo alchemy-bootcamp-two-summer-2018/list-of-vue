@@ -30,6 +30,3 @@ Pick a domain topic of interest. Limited requirements:
 1. Create dummy data with at least 3-4 items and return as `data` of `App`
 1. Pass callback function to add form, and call when submitted
 1. BONUS: Pass callback function thru list and to item to remove when button clicked
-
-
- 
