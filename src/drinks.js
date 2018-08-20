@@ -20,12 +20,11 @@ const drinks = [
     year: 1838,
     era: 'pre-Prohibition',
     containsEgg: false
-
   },
   {
-    name: 'Sazerac',
-    baseSpirit: 'gin',
-    year: 1888,
+    name: 'Daiquiri',
+    baseSpirit: 'rum',
+    year: 1902,
     era: 'pre-Prohibition',
     containsEgg: false
   },
