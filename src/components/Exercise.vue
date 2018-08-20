@@ -15,4 +15,9 @@ export default {
 
 <style scoped>
 
+button {
+  padding: 15px;
+  cursor: pointer;
+}
+
 </style>
