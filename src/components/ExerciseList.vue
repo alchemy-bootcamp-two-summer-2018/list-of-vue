@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import Exercise from './Exercise.vue';
+
 export default {
 
 };
