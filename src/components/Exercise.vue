@@ -4,7 +4,10 @@
     <p>Sets: {{ exercise.sets }}</p>
     <p>Reps: {{ exercise.reps }}</p>
     <p>Notes: {{ exercise.notes }} </p>
-    <button>Remove this movement</button>
+    <button
+        v-on:click="onRemove(exercise)">
+        Remove this exercise
+    </button>
   </li>
 </template>
 
@@ -12,6 +15,7 @@
 export default {
   props: {
     exercise: Object,
+    onRemove: Function
   }
 
 };

@@ -33,7 +33,7 @@ export default {
     handleRemove(exercise) {
       const index = this.exercises.indexOf(exercise);
       if(index !== -1) {
-        this.exercises.splice(index,1);
+        this.exercises.splice(index, 1);
       }
     }
 
