@@ -1,20 +1,32 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <CuteAnimalForm msg="This is a test"/>
+    <CuteAnimalForm v-bind:onAdd="handleAdd"/>
+    <CuteAnimalList v-bind:cuteAnimals="cuteAnimals"/>
   </div>
 </template>
 
 <script>
 import CuteAnimalForm from './components/CuteAnimalForm.vue';
-// import cuteAnimals from './cute-animals.js';
+import cuteAnimals from './cute-animals.js';
+import CuteAnimalList from './components/CuteAnimalList.vue';
+
 
 export default {
   name: 'app',
+  data() {
+    return { cuteAnimals };
+  },
   components: {
-    CuteAnimalForm
+    CuteAnimalForm,
+    CuteAnimalList
+  },
+  methods: {
+    handleAdd(cuteAnimal) {
+      this.cuteAnimals.push(cuteAnimal);
+    }
   }
-}
+};
 </script>
 
 <style>

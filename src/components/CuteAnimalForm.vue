@@ -1,6 +1,7 @@
 <template>
+import cuteAnimals from '../cute-animals';
   <div class="cute-animal-form">
-    <h1>{{ msg }}</h1>
+    <h1>This is my Cute Animal Form</h1>
     <form v-on:submit.prevent="handleSubmit">
         <p>
             <label>
@@ -25,6 +26,7 @@
 </template>
 
 <script>
+
 export default {
 
   props: {
