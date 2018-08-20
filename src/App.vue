@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <h1>Hello World</h1>
     <DrinkList v-bind:drinks="drinks"/>
+    <AddDrink v-bind:onAdd="handleAdd"/>
   </div>
 </template>
 
