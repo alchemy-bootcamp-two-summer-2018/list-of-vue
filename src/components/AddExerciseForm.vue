@@ -1,18 +1,25 @@
 <template>
-  <form>
-    <label>
-      Movement Name: <input v-model="name" placeholder="e.g. bench, squat, etc">
-    </label>
-  
-    <label>
-      Sets: <input placeholder="Enter a number">
-    </label>
-  
-    <label>
-      Reps: <input placeholder="Enter a number">
-    </label>
-    <button>Add Exercise</button>
-  </form>
+  <section>
+    <h2>Add a new exercise</h2>
+    <form>
+      <label>
+        Movement Name: <input v-model="name" placeholder="e.g. bench, squat, etc">
+      </label>
+    
+      <label>
+        Sets: <input placeholder="Enter a number">
+      </label>
+    
+      <label>
+        Reps: <input placeholder="Enter a number">
+      </label>
+
+      <label>
+        Notes: <input placeholder="Any thoughts?">
+      </label>
+      <button>Add Exercise</button>
+    </form>
+  </section>
 </template>
 
 <script>
@@ -28,7 +35,17 @@ export default {
 </script>
 
 <style scoped>
+
 label {
   display: block;
 }
+h2 {
+    font-size: 36px;
+}
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
 </style>
