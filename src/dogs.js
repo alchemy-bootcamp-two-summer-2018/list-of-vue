@@ -1,7 +1,7 @@
 const dogs = [
   {
     name: 'Goofy',
-    type: 'Goofy Cartoon Dogo',
+    type: 'Cartoon Dogo',
     food: 'Pepperoni Pizza'
         
   },
@@ -17,7 +17,7 @@ const dogs = [
   },
   {
     name: 'Snoopy',
-    type: 'Sleepy Cartoon Dogo',
+    type: 'Cartoon Dogo',
     food: 'Children'
   },
   {

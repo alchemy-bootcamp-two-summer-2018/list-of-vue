@@ -4,6 +4,7 @@
       <Dog v-for="dog in dogs"
       v-bind:key="dog.name"
       v-bind:dog="dog"
+      v-bind:onRemove="onRemove"
       />
     </ul>
   </div>
@@ -15,7 +16,8 @@ import Dog from './Dog.vue';
 
 export default {
   props: {
-    dogs: Array
+    dogs: Array,
+    onRemove: Function
   },
   components: {
     Dog

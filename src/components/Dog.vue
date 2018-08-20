@@ -1,8 +1,17 @@
 <template>
   <li>
     <h3>{{ dog.name }}</h3>
-    <p>{{ dog.type }}</p>
+    <p v-if="dog.type === 'Cartoon Dogo'"
+      v-bind:class="{ cartoon: dog.type === 'Cartoon Dogo' }"
+    >
+      <strong>This Dogo is a <em>Cartoon</em> Dogo</strong>
+    </p>
+    <p v-else>{{ dog.type }}</p>
     <p>{{ dog.food }}</p>
+
+    <p>
+      <button v-on:click="onRemove(dog)">Remove</button>
+    </p>
   </li>
 </template>
 
@@ -10,10 +19,13 @@
 export default {
   props: {
     dog: Object,
+    onRemove: Function
   }
 };
 </script>
 
 <style scoped>
-
+.cartoon {
+  color: steelblue;
+}
 </style>

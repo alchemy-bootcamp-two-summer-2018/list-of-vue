@@ -2,8 +2,8 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <h1>All The Dogos</h1>
-    <DogList v-bind:dogs="dogs"/>
     <AddDog v-bind:onAdd="handleAdd"/>
+    <DogList v-bind:dogs="dogs" v-bind:onRemove="handleRemove"/>
   </div>
 </template>
 
@@ -24,6 +24,12 @@ export default {
   methods: {
     handleAdd(dog) {
       this.dogs.push(dog);
+    },
+    handleRemove(dog) {
+      const index = this.dogs.indexOf(dog);
+      if(index !== -1) {
+        this.dogs.splice(index, 1);
+      }
     }
   }
 };
