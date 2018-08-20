@@ -1,24 +1,29 @@
 const dogs = [
   {
     name: 'Goofy',
-    type: 'Cartoon Dogo',
-    color: 'Black and White'
+    type: 'Goofy Cartoon Dogo',
+    food: 'Pepperoni Pizza'
         
   },
   {
     name: 'Sirius Black',
     type: 'Human/Shaggy Dogo',
-    color: 'Black'
+    food: 'Fish \'n Chips'
   },
   {
     name: 'AirBud',
     type: 'Sporty Dogo',
-    color: 'Golden'
+    food: 'Brotien Powder'
   },
   {
     name: 'Snoopy',
-    type: 'Cartoon Beagle',
-    color: 'White and Black'
+    type: 'Sleepy Cartoon Dogo',
+    food: 'Children'
+  },
+  {
+    name: 'Lewis',
+    type: 'Sassy Dogo',
+    food: 'Floor Snackos'
   }
 ];
 

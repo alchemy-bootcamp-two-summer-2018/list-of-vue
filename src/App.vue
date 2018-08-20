@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <h1>All The Dogs</h1>
+    <h1>All The Dogos</h1>
     <DogList v-bind:dogs="dogs"/>
-    <AddDog/>
+    <AddDog v-bind:onAdd="handleAdd"/>
   </div>
 </template>
 
@@ -20,6 +20,11 @@ export default {
   components: {
     DogList,
     AddDog
+  },
+  methods: {
+    handleAdd(dog) {
+      this.dogs.push(dog);
+    }
   }
 };
 </script>

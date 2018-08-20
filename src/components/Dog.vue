@@ -2,7 +2,7 @@
   <li>
     <h3>{{ dog.name }}</h3>
     <p>{{ dog.type }}</p>
-    <p>{{ dog.color }}</p>
+    <p>{{ dog.food }}</p>
   </li>
 </template>
 
