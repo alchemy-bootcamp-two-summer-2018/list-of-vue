@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <h1>Workout Tracker</h1>
     <img alt="workout logo" src="./assets/logo.png">
-    <AddExerciseForm/>>
+    <AddExerciseForm/>
     <ExerciseList/>
   </div>
 </template>
@@ -23,6 +24,11 @@ export default {
 </script>
 
 <style scoped>
+
+h1 {
+  font-size: 72px;
+  font-weight: 500;
+}
 
 img {
   width: 300px;

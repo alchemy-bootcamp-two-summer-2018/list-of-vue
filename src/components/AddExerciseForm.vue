@@ -11,7 +11,7 @@
     <label>
       Reps: <input placeholder="Enter a number">
     </label>
-    <button>Add Pirate</button>
+    <button>Add Exercise</button>
   </form>
 </template>
 
