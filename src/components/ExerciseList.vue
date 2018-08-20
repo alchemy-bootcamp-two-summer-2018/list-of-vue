@@ -1,5 +1,10 @@
 <template>
-    
+    <section>
+        <h2>Your workout</h2>
+        <ul>
+            <Exercise/>
+        </ul>
+    </section>
 </template>
 
 <script>
@@ -13,3 +18,4 @@ export default {
 <style scoped>
 
 </style>
+    
