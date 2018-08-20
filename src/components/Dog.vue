@@ -1,6 +1,7 @@
 <template>
   <li>
     <h3>{{ dog.name }}</h3>
+    <img v-bind:src="dog.img">
     <p v-if="dog.type === 'Cartoon Dogo'"
       v-bind:class="{ cartoon: dog.type === 'Cartoon Dogo' }"
     >
@@ -27,5 +28,8 @@ export default {
 <style scoped>
 .cartoon {
   color: steelblue;
+}
+img {
+  width: 100px;
 }
 </style>

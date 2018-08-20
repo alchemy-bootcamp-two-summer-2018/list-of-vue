@@ -16,6 +16,11 @@
       </label>
     </p>
     <p>
+      <label>
+        Image: <input v-model="img" placeholder="Dogo Image">
+      </label>
+    </p>
+    <p>
       <button>Add A Dogo</button>
     </p>
   </form>
@@ -30,7 +35,8 @@ export default {
     return {
       name: '',
       type: '',
-      food: ''
+      food: '',
+      img: ''
     };
   },
   methods: {
@@ -38,13 +44,15 @@ export default {
       const newDogo = {
         name: this.name,
         type: this.type,
-        food: this.food
+        food: this.food,
+        img: this.img
       };
       this.onAdd(newDogo);
-      
+
       this.name = '';
       this.type = '';
       this.food = '';
+      this.img = '';
     }
   }
 };
