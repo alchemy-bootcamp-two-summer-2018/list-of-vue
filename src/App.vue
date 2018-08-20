@@ -2,21 +2,24 @@
   <div id="app">
     <h1>Workout Tracker</h1>
     <img alt="workout logo" src="./assets/logo.png">
-    <AddExerciseForm/>
-    <ExerciseList/>
+    <AddExerciseForm />
+    <ExerciseList v-bind:exercises="exercises" />
   </div>
 </template>
 
 <script>
-import ExerciseList from './components/ExerciseList';
 import AddExerciseForm from './components/AddExerciseForm';
-import workout from './workout.js';
+import ExerciseList from './components/ExerciseList';
+import exercises from './exercises.js';
 
 export default {
   name: 'app',
+  data() {
+    return { exercises };
+  },
   components: {
-    ExerciseList,
     AddExerciseForm,
+    ExerciseList,
   }
 
 
