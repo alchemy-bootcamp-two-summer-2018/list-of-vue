@@ -46,8 +46,24 @@ export default {
       containsEgg: ''
     };
   },
+  methods: {
+    handleSubmit() {
+      const newDrink = {
+        name: this.name,
+        baseSpirit: this.baseSpirit,
+        year: this.year,
+        era: this.era,
+        containsEgg: this.containsEgg
+      };
+      this.onAdd(newDrink);
 
-
+      this.name = '';
+      this.baseSpirit = '';
+      this.year = '';
+      this.era = '';
+      this.containsEgg = '';
+    }
+  }
 };
 </script>
 

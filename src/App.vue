@@ -20,6 +20,11 @@ export default {
   components: {
     AddDrink,
     DrinkList
+  },
+  methods: {
+    handleAdd(drink) {
+      this.drinks.push(drink);
+    }
   }
 };
 </script>
