@@ -24,6 +24,10 @@
 
 <script>
 export default {
+  props: {
+    onAdd: Function
+  },
+
   data() {
     return {
       name: '',
