@@ -23,7 +23,8 @@
     </p>
     <p>
       <label>
-        Does it contain raw egg? <input type="radio" v-model="containsEgg"> Yes <input type="radio" v-model="containsEgg"> No
+        Does it contain raw egg? 
+        <input type="checkbox" v-model="containsEgg">
       </label>
     </p>
     <p>
