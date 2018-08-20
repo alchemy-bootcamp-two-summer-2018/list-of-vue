@@ -31,7 +31,16 @@ export default {
 
 <style scoped>
 
+section {
+    margin: 10px 5%;
+}
 h2 {
     font-size: 36px;
 }
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 </style>
