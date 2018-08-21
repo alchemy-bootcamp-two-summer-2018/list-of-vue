@@ -31,8 +31,8 @@ export default {
   width: 300px;
 }
 li {
-  max-width: 33%;
-  min-width: 30%;
+  width: 33%;
+  
 }
 
 </style>
