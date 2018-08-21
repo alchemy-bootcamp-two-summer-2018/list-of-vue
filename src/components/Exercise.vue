@@ -46,6 +46,10 @@ li {
     justify-self: center;
 }
 
+li:hover { 
+  background-color: rgb(172, 171, 110);
+}
+
 h3 {
   padding: 10px;
 }
