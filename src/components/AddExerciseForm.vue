@@ -115,6 +115,12 @@ button {
   cursor: pointer;
   background-color: rgb(0, 0, 68);
   color: white;
+  border: 2px solid rgb(2, 2, 165);
+}
+
+button:hover { 
+  background-color: rgb(2, 2, 165);
+  border: 2px solid rgb(0, 0, 68);
 }
 
 
