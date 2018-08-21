@@ -76,16 +76,29 @@ export default {
 
 <style scoped>
 
+
+
 section {
   margin: 0 25%;
-}
-
-label {
-  display: block;
+  border: 1px solid black;
 }
 h2 {
     font-size: 36px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  margin: 10px;
+}
+input, select, textarea {
+  margin: 0px 10px;
+}
+
+
 button {
   padding: 10px 15px;
   cursor: pointer;

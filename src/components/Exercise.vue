@@ -32,6 +32,12 @@ export default {
 
 <style scoped>
 
+li {
+    max-width: 300px;
+    margin: 15px 25px;
+    border: 1px solid black;
+}
+
 button {
   padding: 4px 8px;
   cursor: pointer;
