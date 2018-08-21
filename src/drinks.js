@@ -5,7 +5,7 @@ const drinks = [
     year: 1888,
     era:'pre-Prohibition',
     containsEgg: true,
-    image: 'public/images/ramos_gin_fizz.jpg'
+    image: 'images/ramos_gin_fizz.jpg'
   },
   {
     name: 'Mai Tai',
@@ -13,7 +13,7 @@ const drinks = [
     year: 1944,
     era: 'Tiki',
     containsEgg: false,
-    image:'public/images/mai_tai.jpg'
+    image:'images/mai_tai.jpg'
   },
   {
     name: 'Sazerac',
@@ -21,7 +21,7 @@ const drinks = [
     year: 1838,
     era: 'pre-Prohibition',
     containsEgg: false,
-    image: 'public/images/sazerac.jpg'
+    image: 'images/sazerac.jpg'
   },
   {
     name: 'Daiquiri',
@@ -29,7 +29,7 @@ const drinks = [
     year: 1902,
     era: 'pre-Prohibition',
     containsEgg: false,
-    image: 'public/images/daiquiri.jpg'
+    image: 'images/daiquiri.jpg'
   },
   {
     name: 'Pisco Sour',
@@ -37,7 +37,7 @@ const drinks = [
     year: 1903,
     era: 'pre-Prohibition',
     containsEgg: true,
-    image: 'public/images/pisco_sour.jpg'
+    image: 'images/pisco_sour.jpg'
   },
   {
     name: 'Zombie',
@@ -45,7 +45,7 @@ const drinks = [
     year: 1934,
     era: 'Tiki',
     containsEgg: false,
-    image: 'public/images/zombie.jpg'
+    image: 'images/zombie.jpg'
   }
 ];
 
