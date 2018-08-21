@@ -53,6 +53,10 @@ export default {
 
 <style scoped>
 
+* {
+    color: navy;
+}
+
 section {
     margin: 10px 5%;
 }
@@ -61,7 +65,7 @@ h2 {
 }
 h3 {
     font-size: 32px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid navy;
 }
 ul {
   list-style: none;

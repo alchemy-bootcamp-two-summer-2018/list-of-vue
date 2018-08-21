@@ -32,10 +32,14 @@ export default {
 
 <style scoped>
 
+* {
+    color: navy;
+}
+
 li {
     max-width: 300px;
     margin: 15px 25px;
-    border: 1px solid black;
+    border: 1px solid navy;
 }
 
 button {
