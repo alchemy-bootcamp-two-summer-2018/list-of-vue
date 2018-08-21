@@ -1,5 +1,5 @@
 <template>
-  <form v-on:submit.prevent="handleSubmit, checkForm">
+  <form v-on:submit.prevent="handleSubmit">
     <div v-if="errors.length">
       <b>Please correct the following error(s):</b>
       <p v-for="error in errors"
@@ -46,7 +46,12 @@ export default {
       img: ''
     };
   },
-  methods: {  
+  methods: {
+
+    //how to itterate through array with no keys? Can you?
+    //example v-bind:key="*error"
+    //can you pass multiple functions to form
+    //example v-on:submit.prevent="handleSubmit, *checkForm" 
     checkForm() {
       if(this.name && this.type && this.food && this.img){
         return true;
