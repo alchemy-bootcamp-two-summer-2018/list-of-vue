@@ -30,7 +30,6 @@ export default {
       if(index !== -1) {
         this.drinks.splice(index, 1);
       }
-
     }
   }
 };
