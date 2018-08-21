@@ -1,0 +1,31 @@
+/* * {
+    background-color: black;
+} */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button {
+    margin-left: 50px;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+button#add-compadre:hover {
+    background-color: rgb(60, 206, 60);
+}
+
+button#dropped-out:hover {
+    background-color: rgb(240, 59, 59);
+}
