@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h1>Workout Tracker</h1>
-    <img alt="workout logo" src="./assets/logo.png">
+    <Header/>
+    
     <AddExerciseForm 
       v-bind:onAdd="handleAdd" 
     />
@@ -9,10 +9,15 @@
       v-bind:exercises="exercises" 
       v-bind:onRemove="handleRemove"
     />
+
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 import AddExerciseForm from './components/AddExerciseForm';
 import ExerciseList from './components/ExerciseList';
 import exercises from './exercises.js';
@@ -25,6 +30,8 @@ export default {
   components: {
     AddExerciseForm,
     ExerciseList,
+    Header,
+    Footer
   },
   methods: {
     handleAdd(exercise) {
@@ -45,13 +52,7 @@ export default {
 
 <style scoped>
 
-h1 {
-  font-size: 72px;
-  font-weight: 500;
-}
 
-img {
-  width: 300px;
-}
+
 
 </style>
