@@ -2,36 +2,37 @@
   <section>
     <h2>Add a new exercise</h2>
     <form v-on:submit.prevent="handleSubmit">
-      <label>
+      <p>
         Movement Name: 
-        <input v-model="name" placeholder="e.g. bench, squat, etc" required>
-      </label>
+      </p>
+      <input v-model="name" placeholder="e.g. bench, squat, etc" required>
 
-      <label>
+      <p>
         Type:
-        <select v-model="type" required>
-          <option disabled value="">Please select one</option>
-          <option value="upper">Upper</option>
-          <option value="lower">Lower</option>
-          <option value="core">Core</option>
-        </select>
-      </label>
+      </p>
+      <select v-model="type" required>
+        <option disabled value="">Please select one</option>
+        <option value="upper">Upper</option>
+        <option value="lower">Lower</option>
+        <option value="core">Core</option>
+      </select>
     
-      <label>
+      <p>
         Sets: 
-        <input v-model="sets" placeholder="Enter a number" required>
-      </label>
+      </p>
+      <input v-model="sets" placeholder="Enter a number" required>
     
-      <label>
+      <p>
         Reps: 
-        <input v-model="reps" placeholder="Enter a number" required>
-      </label>
+      </p>
+      <input v-model="reps" placeholder="Enter a number" required>
 
-      <label>
+      <p>
         Notes: 
-        <textarea v-model="notes" placeholder="Any thoughts?"></textarea>
-      </label>
-      <button>Add Exercise</button>
+      </p>
+      <textarea v-model="notes" placeholder="Any thoughts?"></textarea>
+    
+      <button style="grid-column-start: span 2;">Add Exercise</button>
     </form>
   </section>
 </template>
@@ -88,18 +89,22 @@ h2 {
     font-size: 36px;
 }
 form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
   border: 1px solid navy;
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 }
-label {
-  display: flex;
-  margin: 10px;
+
+p, input, select, textarea {
+  margin: 6px;
+}
+
+p {
+  justify-self: end;
 }
 input, select, textarea {
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   border: 1px solid navy;
   padding: 3px;
 }
