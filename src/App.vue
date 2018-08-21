@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    
+    <h2>Your Workout</h2>
     <AddExerciseForm 
       v-bind:onAdd="handleAdd" 
     />
@@ -51,7 +51,13 @@ export default {
 </script>
 
 <style scoped>
-
+* {
+    color: navy;
+}
+h2 {
+  margin-top: 16px;
+  font-size: 52px;
+}
 
 
 
