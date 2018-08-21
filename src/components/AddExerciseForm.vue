@@ -3,11 +3,6 @@
     <h2>Add a new exercise</h2>
     <form v-on:submit.prevent="handleSubmit">
       <p>
-        Movement Name: 
-      </p>
-      <input v-model="name" placeholder="e.g. bench, squat, etc" required>
-
-      <p>
         Type:
       </p>
       <select v-model="type" required>
@@ -16,7 +11,12 @@
         <option value="lower">Lower</option>
         <option value="core">Core</option>
       </select>
-    
+      
+      <p>
+        Movement Name: 
+      </p>
+      <input v-model="name" placeholder="e.g. bench, squat, etc" required>
+
       <p>
         Sets: 
       </p>
@@ -78,7 +78,7 @@ export default {
 <style scoped>
 
 * {
-    color: navy;
+    color: rgb(0, 0, 68);
 }
 
 section {
@@ -91,7 +91,7 @@ h2 {
 form {
   display: grid;
   grid-template-columns: auto auto;
-  border: 1px solid navy;
+  border: 1px solid rgb(0, 0, 68);
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 }
@@ -105,7 +105,7 @@ p {
 }
 input, select, textarea {
   /* margin: 0px 10px; */
-  border: 1px solid navy;
+  border: 1px solid rgb(0, 0, 68);
   padding: 3px;
 }
 
@@ -113,7 +113,7 @@ input, select, textarea {
 button {
   padding: 10px 15px;
   cursor: pointer;
-  background-color: navy;
+  background-color: rgb(0, 0, 68);
   color: white;
 }
 

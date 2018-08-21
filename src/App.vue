@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 * {
-    color: navy;
+    color: rgb(0, 0, 68);
 }
 h2 {
   margin-top: 16px;

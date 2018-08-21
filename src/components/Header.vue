@@ -28,8 +28,13 @@ img {
 }
 
 header {
-  background-color: navy;
+  background-color: rgb(0, 0, 68);
   color: goldenrod;
+  border: 2px solid black;
+  -webkit-box-shadow: 0px 5px 10px rgba(100, 100, 100, 0.49);
+  -moz-box-shadow:    0px 5px 10px rgba(100, 100, 100, 0.49);
+  box-shadow:         0px 5px 10px rgba(100, 100, 100, 0.49);
+
 }
 
 </style>

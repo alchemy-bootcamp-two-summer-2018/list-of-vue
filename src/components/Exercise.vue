@@ -1,7 +1,6 @@
 <template>
   <li>
-    <h3>Movement Name: {{ exercise.name }}</h3>
-    <p>Type: {{ exercise.type }}</p>
+    <h3>{{ exercise.name }}</h3>
     <p>Sets: {{ exercise.sets }}</p>
     <p>Reps: {{ exercise.reps }}</p>
     <p>Notes: {{ exercise.notes }} </p>
@@ -33,13 +32,13 @@ export default {
 <style scoped>
 
 * {
-    color: navy;
+    color: rgb(0, 0, 68);
 }
 
 li {
     max-width: 300px;
     margin: 15px 25px;
-    border: 1px solid navy;
+    border: 1px solid rgb(0, 0, 68);
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
     display: flex;
@@ -52,7 +51,7 @@ h3 {
 }
 
 p {
-  padding: 1px;
+  padding: 1px 8px;
 }
 
 button {
@@ -60,7 +59,7 @@ button {
   margin: 0px;
   margin-top: 6px;
   cursor: pointer;
-  background-color: navy;
+  background-color: rgb(0, 0, 68);
   color: white;
 }
 

@@ -28,7 +28,7 @@ img {
 }
 
 footer {
-  background-color: navy;
+  background-color: rgb(0, 0, 68);
   color: goldenrod;
 }
 

@@ -28,7 +28,7 @@ const exercises = [
     notes: 'abs of steel, baby'
   },
   {
-    name: 'Hanging Leg Raise',
+    name: 'Hanging Leg Raises',
     type: 'core',
     sets: 3,
     reps: 12,

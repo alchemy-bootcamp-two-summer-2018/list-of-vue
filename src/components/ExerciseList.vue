@@ -53,7 +53,7 @@ export default {
 <style scoped>
 
 * {
-    color: navy;
+    color: rgb(0, 0, 68);
 }
 
 section {
@@ -69,13 +69,10 @@ h3 {
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  border: 1px solid navy;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border: 1px solid rgb(0, 0, 68);
   border-radius: 10px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
-  
-
-
 }
 
 </style>
