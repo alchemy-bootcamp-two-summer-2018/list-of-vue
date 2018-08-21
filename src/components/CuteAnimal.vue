@@ -10,7 +10,7 @@
         <div class="not-kitten" v-else>
             <h3>Meet {{ cuteAnimal.name }} the {{ cuteAnimal.type }}</h3>
             <img v-bind:src="cuteAnimal.img">
-            <button v-on:click="onRemove(cuteAnimal)">Remove this Animal</button>
+            <button v-on:click="onRemove(cuteAnimal)">Remove this {{ cuteAnimal.type }}</button>
         </div>
     </div>
 </template>
@@ -34,26 +34,27 @@ export default {
         padding-bottom: 15px
     }
 
-    .kitten {
+    .animal {
         border: 2px solid bisque;
-        width: 500px;
+        max-width: 500px;
         margin: 50px auto;
+        background-color: rgb(218, 214, 214);
     }
 
-    .kitten img {
+    .animal img {
         width: 80%
-        
     }
 
     .kitten h2 {
         background-color: rgb(197, 67, 57);
         color: white;
         padding: 10px;
+        letter-spacing: 2px;
     }
 
-    .not-kitten {
-        background-color: grey;
-        width: 500px;
+    .animal h3 {
+        padding: 20px;
+        font-size: 24px;
     }
 
 </style>
