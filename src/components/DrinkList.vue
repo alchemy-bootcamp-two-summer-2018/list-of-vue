@@ -31,8 +31,9 @@ export default {
 <style>
 ul {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
