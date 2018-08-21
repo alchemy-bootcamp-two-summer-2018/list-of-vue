@@ -1,7 +1,7 @@
 <template>
   <footer>
+    <img alt="workout logo" src="../assets/icon.png">
     <p>© Brodin's Sanctuary</p>
-    <img alt="workout logo" src="../assets/logo.png">
   </footer>
 </template>
 
@@ -14,8 +14,17 @@ export default {
 
 <style scoped>
 
+p {
+  padding: 10px;
+  padding-bottom: 20px;
+
+}
+
 img {
-  width: 32px;
+  margin-top: 20px;
+  width: 64px;
+  background-color:goldenrod;
+  border-radius: 32px;
 }
 
 footer {

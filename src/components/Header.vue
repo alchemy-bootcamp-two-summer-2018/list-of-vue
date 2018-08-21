@@ -20,9 +20,11 @@ export default {
 h1 {
   font-size: 72px;
   font-weight: 500;
+  padding-top: 15px;
 }
 img {
   width: 300px;
+  margin: 25px;
 }
 
 header {
