@@ -1,5 +1,11 @@
 <template>
-  <form v-on:submit.prevent="handleSubmit">
+  <form v-on:submit.prevent="handleSubmit, checkForm">
+    <div v-if="errors.length">
+      <b>Please correct the following error(s):</b>
+      <p v-for="error in errors"
+       v-bind:key="error"
+       > {{ error }}</p>
+    </div>
     <p>
       <label>
         Name: <input v-model="name" placeholder="Dogo Name">
@@ -33,13 +39,34 @@ export default {
   },
   data() {
     return {
+      errors: [],
       name: '',
       type: '',
       food: '',
       img: ''
     };
   },
-  methods: {
+  methods: {  
+    checkForm() {
+      if(this.name && this.type && this.food && this.img){
+        return true;
+      }
+      this.errors = [];
+
+      if(!this.name) {
+        this.errors.push('Name required.');
+      }
+      if(!this.type) {
+        this.errors.push('Type required.');
+      }
+
+      if(!this.food) {
+        this.errors.push('Food required.');
+      }
+      if(!this.img) {
+        this.errors.push('Image required.');
+      }
+    },
     handleSubmit() {
       const newDogo = {
         name: this.name,

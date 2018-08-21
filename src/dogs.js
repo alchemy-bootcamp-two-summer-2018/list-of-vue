@@ -12,7 +12,7 @@ const dogs = [
     img: 'https://harrypotterinfofanpage.weebly.com/uploads/5/3/0/6/53069129/9126169_orig.jpg'
   },
   {
-    name: 'AirBud',
+    name: 'Air Bud',
     type: 'Sporty Dogo',
     food: 'Brotien Powder',
     img: 'https://vignette.wikia.nocookie.net/disney/images/3/3c/Buddy_%28Air_Bud%29.png/revision/latest?cb=20130902153736'
