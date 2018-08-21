@@ -47,15 +47,7 @@ export default {
     };
   },
   methods: {
-
-    //how to itterate through array with no keys? Can you?
-    //example v-bind:key="*error"
-    //can you pass multiple functions to form
-    //example v-on:submit.prevent="handleSubmit, *checkForm" 
     checkForm() {
-      if(this.name && this.type && this.food && this.img){
-        return true;
-      }
       this.errors = [];
 
       if(!this.name) {
@@ -71,8 +63,13 @@ export default {
       if(!this.img) {
         this.errors.push('Image required.');
       }
+      return !this.errors.length;
     },
     handleSubmit() {
+      this.errors = [];
+      if(!this.checkForm()){
+        return;
+      }
       const newDogo = {
         name: this.name,
         type: this.type,

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <h1>All The Dogos</h1>
     <AddDog v-bind:onAdd="handleAdd"/>
     <DogList v-bind:dogs="dogs" v-bind:onRemove="handleRemove"/>
