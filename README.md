@@ -1,6 +1,14 @@
-# list-of-vue
+# Workout Tracker
+
+## TODO
+
+* Add another page
+  * Main app should have workout selector (in the form of cards?)
+  * secondary page will have current main page, showing the exercises within a given workout
 
 ## Project setup
+
+### Install required node modules
 ```
 npm install
 ```
