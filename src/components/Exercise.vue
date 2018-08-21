@@ -1,6 +1,7 @@
 <template>
   <li>
     <h3>Movement Name: {{ exercise.name }}</h3>
+    <p>Type: {{ exercise.type }}</p>
     <p>Sets: {{ exercise.sets }}</p>
     <p>Reps: {{ exercise.reps }}</p>
     <p>Notes: {{ exercise.notes }} </p>
