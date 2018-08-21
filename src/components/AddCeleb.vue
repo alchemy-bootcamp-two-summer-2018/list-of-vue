@@ -156,21 +156,6 @@ export default {
 </script>
 
 <style>
-body {
-    font-weight: bold;
-    text-rendering: auto;
-    color: initial;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    margin-left: 10%;
-    margin-right: 10% !important;
-    font: 400 .9rem system-ui;
-}
 
 h3 {
     font-size: 1.1rem;

@@ -4,12 +4,21 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box; 
 }
-  
+
+
 body {
-    background:white;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
+  font-weight: bold;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  width: 100vw;
+  font: 400 .9rem system-ui;
 }
 
 h2 {
@@ -21,9 +30,6 @@ h2 {
     vertical-align: top;
 }
 
-/* img {
-    width: 40vw;
-} */
 /**************************/
 /* Nav bar ***************/
 
@@ -78,7 +84,7 @@ nav:hover .menu-content {
 
 .grid {
     display: grid;
-    grid-template-columns: 90vw;
+    grid-template-columns: auto;
     grid-template-rows: 14vh auto auto 7vh;
     grid-template-areas: 
                         'nav'
@@ -87,6 +93,8 @@ nav:hover .menu-content {
                         'footer';
     grid-column-gap: 1vw;
     grid-row-gap: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .grid .nav {

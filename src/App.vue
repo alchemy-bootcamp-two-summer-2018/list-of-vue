@@ -31,7 +31,7 @@ export default {
     handleRemove(celeb) {
       const index = this.celebs.indexOf(celeb);
       if(index !== -1) {
-        this.pirates.splice(index, 1);
+        this.celebs.splice(index, 1);
       }
     }
   }
