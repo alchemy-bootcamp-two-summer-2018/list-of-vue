@@ -1,6 +1,6 @@
 <template>
   <div class="cute-animal-form">
-    <h1>This is my Cute Animal Form</h1>
+    <h1>Add a Cute Animal</h1>
     <form v-on:submit.prevent="handleSubmit">
         <p>
             <label>
@@ -50,7 +50,7 @@ export default {
       this.onAdd(newCuteAnimal);
         this.name = '',
         this.type = '',
-        this.crew = ''
+        this.img = ''
     }
   }
 };

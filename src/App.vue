@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img class="header" alt="Dog and Cat Header" src="http://static.tumblr.com/fff16121e816f74cffc899fb0322f811/vv6nlcz/ehAn0rhaz/tumblr_static_animal_header.jpg">
     <CuteAnimalForm v-bind:onAdd="handleAdd" v-bind:cuteAnimals="cuteAnimals"/>
-    <CuteAnimalList v-bind:cuteAnimals="cuteAnimals"/>
+    <CuteAnimalList v-bind:cuteAnimals="cuteAnimals" v-bind:onRemove="handleRemove"/>
   </div>
 </template>
 
@@ -23,18 +23,15 @@ export default {
   methods: {
     handleAdd(cuteAnimal) {
       this.cuteAnimals.push(cuteAnimal);
+    },
+    handleRemove(cuteAnimal) {
+      const index = this.cuteAnimals.indexOf(cuteAnimal);
+      if(index !== -1) {
+        this.cuteAnimals.splice(index, 1);
+      }
     }
   }
 };
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
