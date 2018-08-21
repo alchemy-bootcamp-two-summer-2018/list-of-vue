@@ -2,13 +2,13 @@
     <div class="animal">
         <div class="kitten" v-if="cuteAnimal.type === 'Kitten'">
             <h2>Kitten Alert!</h2>
-            <h3>Meet {{ cuteAnimal.name }}</h3>
+            <h3>{{ cuteAnimal.name }} the Kitten</h3>
             <img v-bind:src="cuteAnimal.img">
             <button v-on:click="onRemove(cuteAnimal)">Remove this {{ cuteAnimal.type }}</button>
         </div>
 
         <div class="not-kitten" v-else>
-            <h3>Meet {{ cuteAnimal.name }} the {{ cuteAnimal.type }}</h3>
+            <h3>{{ cuteAnimal.name }} the {{ cuteAnimal.type }}</h3>
             <img v-bind:src="cuteAnimal.img">
             <button v-on:click="onRemove(cuteAnimal)">Remove this {{ cuteAnimal.type }}</button>
         </div>
@@ -30,23 +30,21 @@ export default {
         margin: 20px auto;
     }
 
-    .animal div {
-        padding-bottom: 15px
-    }
-
     .animal {
         border: 2px solid bisque;
         max-width: 500px;
-        margin: 50px auto;
         background-color: rgb(218, 214, 214);
+        width: 100%;
     }
 
     .animal img {
-        width: 80%
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 
     .kitten h2 {
-        background-color: rgb(197, 67, 57);
+        background-color: bisque;
         color: white;
         padding: 10px;
         letter-spacing: 2px;
@@ -55,6 +53,10 @@ export default {
     .animal h3 {
         padding: 20px;
         font-size: 24px;
+    }
+
+    .not-kitten {
+         height: 100%;
     }
 
 </style>

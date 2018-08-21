@@ -1,6 +1,5 @@
 <template>
     <div class="cute-animal-list">
-        <h2>Cute Animal List</h2>
         <CuteAnimal v-for="cuteAnimal in cuteAnimals"
             v-bind:key="cuteAnimal.name"
             v-bind:cuteAnimal="cuteAnimal"
@@ -23,12 +22,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
     .cute-animal-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-        grid-gap: 10px;
+        grid-gap: 20px;
+        margin: 20px;
     }
 
 </style>
