@@ -20,12 +20,12 @@
       <p>
         Sets: 
       </p>
-      <input v-model="sets" placeholder="Enter a number" required>
+      <input v-model="sets" type="number" placeholder="Enter a number" required>
     
       <p>
         Reps: 
       </p>
-      <input v-model="reps" placeholder="Enter a number" required>
+      <input v-model="reps" type="number" placeholder="Enter a number" required>
 
       <p>
         Notes: 
