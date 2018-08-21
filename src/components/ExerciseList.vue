@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h2>Your workout</h2>
     <h3>Upper Body</h3>
     <ul>
       <Exercise
@@ -65,12 +64,17 @@ h2 {
 }
 h3 {
     font-size: 32px;
-    border-bottom: 1px solid navy;
+    margin: 10px 0px 20px 0px;
 }
 ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  border: 1px solid navy;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+
+
 }
 
 </style>

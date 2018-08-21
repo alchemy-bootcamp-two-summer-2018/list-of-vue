@@ -82,8 +82,7 @@ export default {
 
 section {
   margin: 25px 25%;
-  border: 1px solid navy;
-  border-radius: 5px;
+
 }
 h2 {
     font-size: 36px;
@@ -91,8 +90,10 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
+  border: 1px solid navy;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 }
-
 label {
   display: flex;
   margin: 10px;
@@ -100,12 +101,15 @@ label {
 input, select, textarea {
   margin: 0px 10px;
   border: 1px solid navy;
+  padding: 3px;
 }
 
 
 button {
   padding: 10px 15px;
   cursor: pointer;
+  background-color: navy;
+  color: white;
 }
 
 

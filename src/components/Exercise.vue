@@ -40,11 +40,19 @@ li {
     max-width: 300px;
     margin: 15px 25px;
     border: 1px solid navy;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
 }
 
 button {
   padding: 4px 8px;
+  margin: 0px;
   cursor: pointer;
+  background-color: navy;
+  color: white;
 }
+
 
 </style>
