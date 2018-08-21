@@ -1,6 +1,9 @@
 <template>
   <li>
-      <h3>{{cocktail.name}}</h3>
+    {{cocktail.name}}
+      
+      
+
   </li>
 </template>
 

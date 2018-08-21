@@ -2,14 +2,14 @@
   <section>
     <img alt="Vue logo" src="./assets/logo.png">
     <p>some random content</p>
-    <!-- <AddCocktail v-bind:onAdd="handleAdd"/> -->
+    <AddCocktail v-bind:onAdd="handleAdd"/>
     <CocktailList v-bind:cocktails="cocktails"/>
   </section>
 </template>
 
 <script>
 import CocktailList from './components/CocktailList.vue';
-// import AddCocktail from './components/AddCocktail.vue';
+import AddCocktail from './components/AddCocktail.vue';
 import cocktails from './cocktails';
 export default {
   name: 'app',
@@ -17,7 +17,7 @@ export default {
     return { cocktails };
   },
   components: {
-    // AddCocktail,
+    AddCocktail,
     CocktailList
   },
   methods: {
