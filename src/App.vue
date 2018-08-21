@@ -1,11 +1,11 @@
 <template>
-
-  <section class="flex-container">
+<section class="flex-container">
 
     <AddCat v-bind:onAdd="handleAdd"/>
     <CatList v-bind:cats="cats" v-bind:onRemove="handleRemove"/>
-    
+
   </section>
+
   
 </template>
 

@@ -1,6 +1,5 @@
 <template>
     <div>
-        
         <ul class="flex-container">
          <Cat v-for="cat in cats"
             v-bind:key="cat.name"
