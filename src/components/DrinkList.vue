@@ -27,6 +27,15 @@ export default {
 };
 </script>
 
+
 <style>
+ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 </style>

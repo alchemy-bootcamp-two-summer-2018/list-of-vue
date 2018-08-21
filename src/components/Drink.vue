@@ -1,7 +1,9 @@
 <template>
   <li>
     <p>
-      <img v-bind:src="drink.image">
+      <img class="drink-image" v-bind:src="drink.image">
+    </p>
+    <p>  
       The {{ drink.name }} is a {{ drink.baseSpirit }}-based {{ drink.era }} cocktail from {{ drink.year }}.
     </p>
     <p v-if="drink.containsEgg === true">
@@ -24,5 +26,13 @@ export default {
 </script>
 
 <style>
+.drink-image {
+  height: 300px;
+  width: 300px;
+}
+li {
+  max-width: 33%;
+  min-width: 30%;
+}
 
 </style>
