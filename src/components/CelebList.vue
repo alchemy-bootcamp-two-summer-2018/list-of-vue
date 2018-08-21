@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <h2>Celebs</h2>
-    <ul>
+  <div class="celeb-list">
+    <div class="welcome-text">Here are our celebrity members</div>
+    <div class="racist-warning"> Note: Racist celebrities are in red </div>
       <Celeb v-for="celeb in celebs"
         v-bind:key="celeb.name"
         v-bind:celeb="celeb"
         v-bind:onRemove="onRemove"
       />
-    </ul>
   </div>
 </template>
 

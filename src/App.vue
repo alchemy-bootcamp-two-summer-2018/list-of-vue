@@ -1,15 +1,17 @@
 <template>
-  <section>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <p>some random content</p>
+  <div class="grid">
+    <MyHeader />
     <AddCeleb v-bind:onAdd="handleAdd"/>
     <CelebList v-bind:celebs="celebs" v-bind:onRemove="handleRemove"/>
-  </section>
+    <MyFooter />
+  </div>
 </template>
 
 <script>
 import CelebList from './components/CelebList.vue';
 import AddCeleb from './components/AddCeleb.vue';
+import MyHeader from './components/MyHeader.vue';
+import MyFooter from './components/MyFooter.vue';
 import celebs from './celebs';
 export default {
   name: 'app',
@@ -17,8 +19,10 @@ export default {
     return { celebs };
   },
   components: {
+    MyHeader,
     AddCeleb,
-    CelebList
+    CelebList,
+    MyFooter
   },
   methods: {
     handleAdd(celeb) {
@@ -27,7 +31,7 @@ export default {
     handleRemove(celeb) {
       const index = this.celebs.indexOf(celeb);
       if(index !== -1) {
-        this.celebs.splice(index, 1);
+        this.pirates.splice(index, 1);
       }
     }
   }
