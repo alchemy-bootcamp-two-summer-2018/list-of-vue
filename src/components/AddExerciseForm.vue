@@ -4,12 +4,12 @@
     <form v-on:submit.prevent="handleSubmit">
       <label>
         Movement Name: 
-        <input v-model="name" placeholder="e.g. bench, squat, etc">
+        <input v-model="name" placeholder="e.g. bench, squat, etc" required>
       </label>
 
       <label>
         Type:
-        <select v-model="type">
+        <select v-model="type" required>
           <option disabled value="">Please select one</option>
           <option value="upper">Upper</option>
           <option value="lower">Lower</option>
@@ -19,12 +19,12 @@
     
       <label>
         Sets: 
-        <input v-model="sets" placeholder="Enter a number">
+        <input v-model="sets" placeholder="Enter a number" required>
       </label>
     
       <label>
         Reps: 
-        <input v-model="reps" placeholder="Enter a number">
+        <input v-model="reps" placeholder="Enter a number" required>
       </label>
 
       <label>
@@ -76,11 +76,14 @@ export default {
 
 <style scoped>
 
-
+* {
+    color: navy;
+}
 
 section {
-  margin: 0 25%;
-  border: 1px solid black;
+  margin: 25px 25%;
+  border: 1px solid navy;
+  border-radius: 5px;
 }
 h2 {
     font-size: 36px;
@@ -96,6 +99,7 @@ label {
 }
 input, select, textarea {
   margin: 0px 10px;
+  border: 1px solid navy;
 }
 
 
