@@ -30,6 +30,6 @@ export default {
   color: steelblue;
 }
 img {
-  width: 100px;
+  width: 280px;
 }
 </style>
