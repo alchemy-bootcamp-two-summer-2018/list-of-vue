@@ -18,7 +18,7 @@
             </label>
         </p>
         <p>
-          <button>Add Cute Animal</button>
+          <button>Add</button>
         </p>
     </form>
   </div>
