@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+
+
+body {
+  font-weight: bold;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  width: 100vw;
+  font: 400 .9rem system-ui;
+}
+
+h2 {
+    font-size: 2.0rem;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    text-align: center;
+    vertical-align: top;
+}
+
+/**************************/
+/* Nav bar ***************/
+
+.menu-toggle {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-content {
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    /* margin-left: 5%; */
+    margin-right: 5%;
+    align-items: center;
+    border-bottom: 1px solid #E80C7A;
+}
+
+.logo-left {
+    margin-right: auto;
+}
+
+.aboutus-right {
+    font-size: 20pt;
+    text-decoration: none;
+    margin-left: auto;
+    /* padding-right: 1%; */
+    width: 20%;
+}
+
+a:link {color:black;
+    text-decoration: none;
+}
+
+a:visited {color:black;
+    text-decoration: none;
+}
+
+.logo {
+    width: 25vw;
+}
+
+nav:hover .menu-content {
+    display: flex;
+    color: black;
+}
+
+/****** grid *******/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14vh auto auto 7vh;
+    grid-template-areas: 
+                        'nav'
+                        'formcontent'
+                        'celeb-list'
+                        'footer';
+    grid-column-gap: 1vw;
+    grid-row-gap: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.grid .nav {
+    grid-area: nav;
+}
+
+.grid .content {
+    grid-area: content;
+}
+
+.grid .footer {
+    grid-area: footer;
+    /* position: fixed;
+    bottom: 0px; */
+}
+
+/* .content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 40%;
+    grid-template-areas: 'welcome-text'
+                         'button-container';
+    grid-column-gap: 2vw;
+} */
+
+.welcome-text {
+    font-size: 30pt;
+    /* align-items: center; */
+    /* justify-self: center; */
+    align-self: flex-end;
+    text-align: center;
+    grid-area: welcome-text;
+}  
+
+
+.racist-warning {
+  font-size: 25pt;
+  /* align-items: center; */
+  /* justify-self: center; */
+  align-self: flex-end;
+  text-align: center;
+  grid-area: welcome-text;
+  color: red
+}  
+
+
+/* .welcome-text span {
+    font-weight: bold;
+} */
+
+.button-container {
+    align-self: flex-start;
+    grid-area: button-container;
+    justify-self: center;
+}  
+
+  button {
+    border: 3px solid #96d1f8;
+    background: #e80c7a;
+    padding: 14.5px 29px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+button:hover {
+    background: #ce0b6d;
+}
+
+.picture {
+    display:flex;
+}
+
+.picture-container {
+    align-self: center;
+}
+
+/* footer */
+
+footer {
+    text-align: left;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 100%;
+    border-top: 1px solid #E80C7A;
+    width: 91%;
+}
+
+.social-icon {
+    width: 35px;
+    margin: 0px 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
