@@ -30,3 +30,11 @@ Pick a domain topic of interest. Limited requirements:
 1. Create dummy data with at least 3-4 items and return as `data` of `App`
 1. Pass callback function to add form, and call when submitted
 1. BONUS: Pass callback function thru list and to item to remove when button clicked
+
+## Rubric
+
+* List of Items (List and Item component) **3pts**
+* Add Form **2pts**
+* Update functionality works (coordination of data in App) **2pts**
+* Conditional rendering (`v-if`) **1pt**
+* Clean and Idiomatic Project Organization, JavaScript and VueJS **2pts**
