@@ -1,5 +1,6 @@
 <template>
     <div class="bio" v-bind:class="{ racist: celeb.celebStatus === 'Famous for being racist' }">
+        <h3 v-if="celeb.celebStatus === 'Famous for being racist'" > Ewwwwww </h3>
         <h3> <span class="celeb-prop"> Celebrity Name: </span> {{celeb.name}} </h3>
         <p> <span class="celeb-prop"> Celebrity Status: </span> {{celeb.celebStatus}} </p>
         <p> <span class="celeb-prop"> Fertility: </span> {{celeb.fertility}} </p>
