@@ -7,11 +7,11 @@
 
 <script>
 export default {
-    name: 'Greeting',
-    props: {
-        msg: String
-    }
-}
+  name: 'Greeting',
+  props: {
+    msg: String
+  }
+};
 </script>
 
 <style scoped>

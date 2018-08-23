@@ -17,13 +17,13 @@
 import Person from './Person.vue';
 
 export default {
-    props: {
-        persons: Array,
-        onRemove: Function
-    },
-    components: {
-        Person
-    }
+  props: {
+    persons: Array,
+    onRemove: Function
+  },
+  components: {
+    Person
+  }
 };
 </script>
 

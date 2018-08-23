@@ -22,10 +22,10 @@
 
 
 export default {
-    props: {
-        person: Object,
-        onRemove: Function
-    }
+  props: {
+    person: Object,
+    onRemove: Function
+  }
 };
 
 </script>

@@ -29,7 +29,7 @@ export default {
     },
     handleRemove(person) {
       const index = this.persons.indexOf(person);
-      if (index !== -1) {
+      if(index !== -1) {
         this.persons.splice(index, 1);
       }
     }

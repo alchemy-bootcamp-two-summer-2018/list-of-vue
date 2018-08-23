@@ -28,29 +28,29 @@
 </template>
 <script>
 export default {
-    props: {
-        onAdd: Function 
-    },
-    data() {
-        return {
-            name: '',
-            position: '',
-            from: ''
-        };
-    },
-    methods: {
-        handleSubmit() {
-            const newPerson = {
-                name: this.name,
-                position: this.position,
-                from: this.from
-            };
-            this.onAdd(newPerson);
-            this.name = '';
-            this.position = '';
-            this.from = '';
-        }
+  props: {
+    onAdd: Function 
+  },
+  data() {
+    return {
+      name: '',
+      position: '',
+      from: ''
+    };
+  },
+  methods: {
+    handleSubmit() {
+      const newPerson = {
+        name: this.name,
+        position: this.position,
+        from: this.from
+      };
+      this.onAdd(newPerson);
+      this.name = '';
+      this.position = '';
+      this.from = '';
     }
+  }
 };
 </script>
 
