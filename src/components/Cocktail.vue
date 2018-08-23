@@ -1,7 +1,10 @@
 <template>
   <li>
+    <p v-if="cocktail.price === "
     {{cocktail.name}}
-      
+    {{cocktail.price}}
+    {{cocktail.liquor}}
+    
       
 
   </li>

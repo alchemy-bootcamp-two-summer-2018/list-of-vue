@@ -11,6 +11,7 @@
 import CocktailList from './components/CocktailList.vue';
 import AddCocktail from './components/AddCocktail.vue';
 import cocktails from './cocktails';
+
 export default {
   name: 'app',
   data() {
@@ -35,6 +36,7 @@ export default {
 </script>
 
 <style scoped>
+
 section {
   margin-top: 60px;
 }
