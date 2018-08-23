@@ -55,9 +55,6 @@ export default {
 </script>
 
 <style scoped>
-    /* label {
-        font-size: 16px;
-    } */
     input {
         width: 75%;
     }

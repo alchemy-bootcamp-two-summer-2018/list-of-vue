@@ -12,9 +12,6 @@ import Greeting from './components/Greeting.vue';
 import persons from './persons';
 import ClassList from './components/ClassList.vue';
 import AddPerson from './components/AddPerson';
-// import BootstrapVue from '../node_modules/bootstrap-vue';
-// import '../node_modules/bootstrap/dist/css/bootstrap.css';
-// import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
 export default {
   name: 'app',
