@@ -11,6 +11,16 @@
             </label>
         </p>
         <p>
+            <label>
+                Spice-Level: <input v-model="spiceLevel">
+            </label>
+        </p>
+        <p>
+            <label>
+                Image: <input v-model="image">
+            </label>
+        </p>
+        <p>
         <button>Add Dish</button>
         </p>
     </form>
