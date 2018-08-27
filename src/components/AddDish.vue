@@ -34,19 +34,25 @@ export default {
   data() {
     return {
       name:'',
-      ethnicOrigin: ''
+      ethnicOrigin: '',
+      spiceLevel: '',
+      image: ''
     };
   },
   methods: {
     handleSubmit() {
       const newDish = {
         name: this.name,
-        ethnicOrigin: this.ethnicOrigin
+        ethnicOrigin: this.ethnicOrigin,
+        spiceLevel: this.spiceLevel,
+        image: this.image
       };
       this.onAdd(newDish);
 
       this.name = '';
       this.ethnicOrigin = '';
+      this.spiceLevel = '';
+      this.image = '';
     }
   }
 };
