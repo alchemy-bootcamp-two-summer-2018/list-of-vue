@@ -17,7 +17,7 @@
         </p>
         <p>
             <label>
-                Image: <input v-model="image">
+                Image: <input v-model="image" placeholder="imageUrl">
             </label>
         </p>
         <p>
