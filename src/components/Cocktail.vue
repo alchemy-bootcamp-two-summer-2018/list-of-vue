@@ -1,12 +1,16 @@
 <template>
   <li>
-    <p v-if="cocktail.price === "
+      <h3 v-bind:class="{ $10: cocktail.price === '$10' }">{{ cocktail.name }}</h3>
+      <p v-if="cocktail.price === '$10'">
+        <strong>Cocktail Price {{ price.$10}}</strong>
+      </p>
+      <!-- <p v-else>{{ cocktail.price }} of {{ cocktail.liquor }}</p> -->
+      <!-- <p>
+        <button v-on:click="onRemove(cocktail)">remove this cocktail</button>
+      </p> -->
     {{cocktail.name}}
     {{cocktail.price}}
     {{cocktail.liquor}}
-    
-      
-
   </li>
 </template>
 
@@ -15,9 +19,10 @@ export default {
   name: 'Cocktail',
   props: {
       cocktail: Object,
+      // onRemove: Function
   }
-  
-}
+};
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

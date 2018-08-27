@@ -1,7 +1,7 @@
 <template>
   <section>
     <img alt="Vue logo" src="./assets/logo.png">
-    <p>some random content</p>
+    <p>Fancy Cocktail Bar</p>
     <AddCocktail v-bind:onAdd="handleAdd"/>
     <CocktailList v-bind:cocktails="cocktails"/>
   </section>
@@ -10,7 +10,7 @@
 <script>
 import CocktailList from './components/CocktailList.vue';
 import AddCocktail from './components/AddCocktail.vue';
-import cocktails from './cocktails';
+import cocktails from './cocktails.js';
 
 export default {
   name: 'app',
